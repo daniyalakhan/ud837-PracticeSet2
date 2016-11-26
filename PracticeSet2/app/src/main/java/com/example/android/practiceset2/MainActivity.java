@@ -11,7 +11,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
+        calculate();
+    }
 
+    public void calculate(){
+        int raspberryPrice = 5;
+        display1("1 box: $" + raspberryPrice);
+        display2("2 boxes: $" + (raspberryPrice * 2));
+        display3("3 boxes: $" + (raspberryPrice * 3));
     }
 
     /**
